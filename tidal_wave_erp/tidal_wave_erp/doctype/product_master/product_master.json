@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:product_id",
+ "creation": "2024-04-21 17:43:18.842742",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_id",
+  "product_name",
+  "make",
+  "model_number",
+  "supplier_name",
+  "column_break_nxcf",
+  "price",
+  "lead_time",
+  "unit_of_measure",
+  "type",
+  "monthly",
+  "yearly",
+  "section_break_rc4k",
+  "datasheet"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "product_id",
+   "fieldtype": "Data",
+   "label": "Product ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make "
+  },
+  {
+   "fieldname": "model_number",
+   "fieldtype": "Data",
+   "label": "Model Number"
+  },
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Link",
+   "label": "Supplier Name",
+   "options": "Supplier Masters"
+  },
+  {
+   "fieldname": "lead_time",
+   "fieldtype": "Data",
+   "label": "Lead Time"
+  },
+  {
+   "fieldname": "unit_of_measure",
+   "fieldtype": "Data",
+   "label": "Unit Of Measure"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nSUPPLY\nSERVICE - One time\nSERVICE - Recurring"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.type == \"SERVICE - Recurring\"",
+   "fieldname": "monthly",
+   "fieldtype": "Check",
+   "label": "Monthly"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.type == \"SERVICE - Recurring\"",
+   "fieldname": "yearly",
+   "fieldtype": "Check",
+   "label": "Yearly"
+  },
+  {
+   "fieldname": "column_break_nxcf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price"
+  },
+  {
+   "fieldname": "datasheet",
+   "fieldtype": "Attach",
+   "label": "Datasheet"
+  },
+  {
+   "fieldname": "section_break_rc4k",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-30 09:29:12.554302",
+ "modified_by": "Administrator",
+ "module": "Tidal Wave ERP",
+ "name": "Product Master",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

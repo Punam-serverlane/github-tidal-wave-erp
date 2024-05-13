@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:MA-{customer_name}-{#####}",
+ "creation": "2024-04-27 14:51:42.068340",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "select_customer_ask",
+  "customer_name",
+  "column_break_2dcw",
+  "date",
+  "section_break_vnaq",
+  "mapper_automation_table"
+ ],
+ "fields": [
+  {
+   "fetch_from": "select_customer_ask.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "column_break_2dcw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_vnaq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mapper_automation_table",
+   "fieldtype": "Table",
+   "label": "Mapper Automation Table",
+   "options": "Mapper Automation Table"
+  },
+  {
+   "fieldname": "select_customer_ask",
+   "fieldtype": "Link",
+   "label": "Select Customer Ask",
+   "options": "Customer Ask"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-12 18:30:13.667685",
+ "modified_by": "Administrator",
+ "module": "Tidal Wave ERP",
+ "name": "Mapper Automation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

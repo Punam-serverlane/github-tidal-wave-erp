@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:product_id",
+ "creation": "2024-04-27 14:25:30.954834",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_id",
+  "product_name",
+  "make",
+  "model",
+  "column_break_went",
+  "unit",
+  "margin",
+  "unit_price",
+  "lead_time",
+  "section_break_2gvf",
+  "datasheet"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_id",
+   "fieldtype": "Link",
+   "label": "Product ID",
+   "options": "Product Master",
+   "unique": 1
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "label": "Unit"
+  },
+  {
+   "fieldname": "margin",
+   "fieldtype": "Percent",
+   "label": "Margin"
+  },
+  {
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "label": "Unit Price"
+  },
+  {
+   "fieldname": "lead_time",
+   "fieldtype": "Data",
+   "label": "Lead Time"
+  },
+  {
+   "fetch_from": "product_id.product_name",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "fetch_from": "product_id.make",
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make"
+  },
+  {
+   "fetch_from": "product_id.model_number",
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fetch_from": "product_id.datasheet",
+   "fieldname": "datasheet",
+   "fieldtype": "Attach",
+   "label": "Datasheet"
+  },
+  {
+   "fieldname": "column_break_went",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_2gvf",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-30 09:29:28.727687",
+ "modified_by": "Administrator",
+ "module": "Tidal Wave ERP",
+ "name": "Sourcing Master",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

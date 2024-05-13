@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-04-27 15:12:34.956537",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "select_mapper_automation",
+  "customer_name",
+  "column_break_sl2k",
+  "date",
+  "section_break_mxfi",
+  "quote_table"
+ ],
+ "fields": [
+  {
+   "fetch_from": "select_mapper_automation.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "column_break_sl2k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_mxfi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "quote_table",
+   "fieldtype": "Table",
+   "label": "Quote Table",
+   "options": "Quote Table"
+  },
+  {
+   "fieldname": "select_mapper_automation",
+   "fieldtype": "Link",
+   "label": "Select Mapper Automation",
+   "options": "Mapper Automation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-12 17:29:20.544975",
+ "modified_by": "Administrator",
+ "module": "Tidal Wave ERP",
+ "name": "Quote",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

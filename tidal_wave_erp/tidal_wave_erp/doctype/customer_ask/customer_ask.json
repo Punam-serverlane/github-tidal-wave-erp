@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:CA-{customer_name}-{#####}",
+ "creation": "2024-04-27 14:32:28.225552",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "column_break_rgnh",
+  "date",
+  "section_break_exd2",
+  "file_upload",
+  "section_break_ukb4",
+  "customer_line_items"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "Customer Master"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_exd2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "file_upload",
+   "fieldtype": "Attach",
+   "label": "File Upload"
+  },
+  {
+   "fieldname": "column_break_rgnh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ukb4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer_line_items",
+   "fieldtype": "Table",
+   "label": "Customer Line Items",
+   "options": "Customer Line Items"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-12 13:03:23.034976",
+ "modified_by": "Administrator",
+ "module": "Tidal Wave ERP",
+ "name": "Customer Ask",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

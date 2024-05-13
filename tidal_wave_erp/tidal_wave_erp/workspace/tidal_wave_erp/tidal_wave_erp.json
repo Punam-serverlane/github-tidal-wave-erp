@@ -1,0 +1,125 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"GZyrV0lKHZ\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Tidal Wave ERP<br></span>\",\"col\":12}},{\"id\":\"EKQNTOdHRo\",\"type\":\"paragraph\",\"data\":{\"text\":\"<br>\",\"col\":12}},{\"id\":\"Ktc6lp5-1U\",\"type\":\"card\",\"data\":{\"card_name\":\"Masters\",\"col\":4}},{\"id\":\"T129ed0gKj\",\"type\":\"card\",\"data\":{\"card_name\":\"Entries\",\"col\":4}}]",
+ "creation": "2024-04-21 17:46:37.291966",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "getting-started",
+ "idx": 1,
+ "is_hidden": 0,
+ "label": "Tidal Wave ERP",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Entries",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer Ask ",
+   "link_count": 0,
+   "link_to": "Customer Ask",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Mapper Automation",
+   "link_count": 0,
+   "link_to": "Mapper Automation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Quote",
+   "link_count": 0,
+   "link_to": "Quote",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Masters",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Supplier Master",
+   "link_count": 0,
+   "link_to": "Supplier Masters",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Product Master",
+   "link_count": 0,
+   "link_to": "Product Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Price Master",
+   "link_count": 0,
+   "link_to": "Price Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer Master",
+   "link_count": 0,
+   "link_to": "Customer Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sourcing Master",
+   "link_count": 0,
+   "link_to": "Sourcing Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-04-27 16:25:10.108430",
+ "modified_by": "Administrator",
+ "module": "Tidal Wave ERP",
+ "name": "Tidal Wave ERP",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 40.0,
+ "shortcuts": [],
+ "title": "Tidal Wave ERP"
+}
