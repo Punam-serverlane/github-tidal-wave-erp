@@ -2,6 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
+ "autoname": "format:Quote-{customer_name}-{#####}",
  "creation": "2024-04-27 15:12:34.956537",
  "default_view": "List",
  "doctype": "DocType",
@@ -50,10 +51,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-12 17:29:20.544975",
+ "modified": "2024-05-14 17:37:26.472554",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
  "name": "Quote",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

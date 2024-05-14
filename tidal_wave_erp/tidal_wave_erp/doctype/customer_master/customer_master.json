@@ -13,7 +13,6 @@
   "email",
   "mobile_number",
   "column_break_i31b",
-  "opportunity_name",
   "channel_partner_name",
   "adjuster"
  ],
@@ -35,28 +34,23 @@
    "label": "Mobile number"
   },
   {
-   "fieldname": "opportunity_name",
-   "fieldtype": "Data",
-   "label": "Opportunity Name "
-  },
-  {
    "fieldname": "channel_partner_name",
    "fieldtype": "Data",
    "label": "Channel Partner Name"
   },
   {
-   "fieldname": "adjuster",
-   "fieldtype": "Data",
-   "label": "Adjuster"
-  },
-  {
    "fieldname": "column_break_i31b",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "adjuster",
+   "fieldtype": "Percent",
+   "label": "Adjuster"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-30 09:30:38.693899",
+ "modified": "2024-05-14 17:46:21.209839",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
  "name": "Customer Master",
