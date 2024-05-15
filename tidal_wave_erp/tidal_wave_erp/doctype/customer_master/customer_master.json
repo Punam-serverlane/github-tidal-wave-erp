@@ -30,8 +30,8 @@
   },
   {
    "fieldname": "mobile_number",
-   "fieldtype": "Int",
-   "label": "Mobile number"
+   "fieldtype": "Phone",
+   "label": "Mobile Number"
   },
   {
    "fieldname": "channel_partner_name",
@@ -50,7 +50,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-14 17:46:21.209839",
+ "modified": "2024-05-15 19:22:50.078609",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
  "name": "Customer Master",

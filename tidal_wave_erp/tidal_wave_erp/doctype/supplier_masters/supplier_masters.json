@@ -17,7 +17,7 @@
  "fields": [
   {
    "fieldname": "mobile_number",
-   "fieldtype": "Int",
+   "fieldtype": "Phone",
    "label": "Mobile Number"
   },
   {
@@ -39,7 +39,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-30 09:31:13.827014",
+ "modified": "2024-05-15 19:23:28.141470",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
  "name": "Supplier Masters",
