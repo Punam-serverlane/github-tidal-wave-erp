@@ -4,22 +4,45 @@
 import frappe
 from frappe.model.document import Document
 
-
 class Quote(Document):
-	pass
+    pass
+
+@frappe.whitelist()
+def fill_quote_table(mapper_automation_id):
+    mapper_automation_doc = frappe.get_doc("Mapper Automation", mapper_automation_id)
+    line_items = []
+
+    for line_item in mapper_automation_doc.mapper_automation_table:
+        line_items.append({
+            'customer_line_item': line_item.customer_line_item,
+            'customer_item_quantity': line_item.customer_item_quantity,
+            'total_price': line_item.total_price_of_customer_line_item,
+            'total_cost': line_item.total_cost_of_customer_line_item
+            # Add other fields as needed
+        })
     
-	def validate(self):
-		# Fetch the selected Customer Ask document
-		mapper_automation_doc = frappe.get_doc("Mapper Automation", self.select_mapper_automation)
-		
-		# Clear existing entries in mapper_automation_table
-		self.quote_table = []
-		
-		# Loop through each line item in mapper_automation_table child table
-		for line_item in mapper_automation_doc.get('mapper_automation_table'):
-			# Append each line item to mapper_automation_table
-			self.append('quote_table', {
-				'customer_line_item': line_item.customer_line_item,
-				'customer_item_quantity': line_item.customer_item_quantity,
+    return line_items
+
+def update_quotes_from_mapper_automation(doc, method):
+    # Get all quotes linked to this mapper_automation
+    quotes = frappe.get_all("Quote", filters={"select_mapper_automation": doc.name})
+    
+    for quote in quotes:
+        quote_doc = frappe.get_doc("Quote", quote.name)
+        
+        # Clear existing rows in the quote_table
+        quote_doc.set("quote_table", [])
+        
+        # Add new rows from the updated mapper_automation_doc
+        for line_item in doc.mapper_automation_table:
+            quote_doc.append("quote_table", {
+                'customer_line_item': line_item.customer_line_item,
+                'customer_item_quantity': line_item.customer_item_quantity,
+                'total_price': line_item.total_price_of_customer_line_item,
+                'total_cost': line_item.total_cost_of_customer_line_item
                 # Add other fields as needed
             })
+        
+        # Save and reload the updated quote document
+        quote_doc.save()
+        quote_doc.reload()

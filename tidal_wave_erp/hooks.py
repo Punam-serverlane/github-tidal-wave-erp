@@ -214,3 +214,11 @@ app_license = "mit"
 # auth_hooks = [
 #	"tidal_wave_erp.auth.validate"
 # ]
+
+# hooks.py
+
+doc_events = {
+    "Mapper Automation": {
+        "on_update": "tidal_wave_erp.tidal_wave_erp.doctype.quote.quote.update_quotes_from_mapper_automation"
+    }
+}

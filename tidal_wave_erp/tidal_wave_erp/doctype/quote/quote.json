@@ -21,6 +21,7 @@
    "fetch_from": "select_mapper_automation.customer_name",
    "fieldname": "customer_name",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Customer Name"
   },
   {
@@ -51,7 +52,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-14 17:37:26.472554",
+ "modified": "2024-05-23 14:33:20.969425",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
  "name": "Quote",

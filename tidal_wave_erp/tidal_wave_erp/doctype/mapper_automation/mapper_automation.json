@@ -11,8 +11,8 @@
  "field_order": [
   "select_customer_ask",
   "customer_name",
-  "column_break_2dcw",
-  "date",
+  "column_break_aqvy",
+  "status",
   "section_break_vnaq",
   "mapper_automation_table"
  ],
@@ -21,16 +21,9 @@
    "fetch_from": "select_customer_ask.customer_name",
    "fieldname": "customer_name",
    "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
    "label": "Customer Name"
-  },
-  {
-   "fieldname": "column_break_2dcw",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "date",
-   "fieldtype": "Date",
-   "label": "Date"
   },
   {
    "fieldname": "section_break_vnaq",
@@ -47,11 +40,22 @@
    "fieldtype": "Link",
    "label": "Select Customer Ask",
    "options": "Customer Ask"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nIn Progress\nDone"
+  },
+  {
+   "fieldname": "column_break_aqvy",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-12 18:30:13.667685",
+ "modified": "2024-05-23 14:32:53.013268",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
  "name": "Mapper Automation",

@@ -14,6 +14,7 @@
   "make",
   "model_number",
   "supplier_name",
+  "cost",
   "column_break_nxcf",
   "price",
   "lead_time",
@@ -99,11 +100,16 @@
   {
    "fieldname": "section_break_rc4k",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "label": "Cost"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-30 09:29:12.554302",
+ "modified": "2024-05-25 13:43:20.310492",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
  "name": "Product Master",
