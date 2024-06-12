@@ -56,6 +56,7 @@
    "label": "Total Price Of Customer Line Item"
   },
   {
+   "depends_on": "eval:frappe.user.has_role('Administrator') \n",
    "fetch_from": "product_id.cost",
    "fieldname": "cost",
    "fieldtype": "Currency",
@@ -75,7 +76,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-05-25 15:06:49.963515",
+ "modified": "2024-06-12 12:18:09.875221",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
  "name": "Mapper Automation Table",
