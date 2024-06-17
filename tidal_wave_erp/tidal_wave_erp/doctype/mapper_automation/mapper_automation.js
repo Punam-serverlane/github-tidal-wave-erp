@@ -11,18 +11,6 @@ frappe.ui.form.on('Mapper Automation', {
     refresh: function(frm) {
         // Calculate totals when the form is refreshed
         calculate_total_for_customer_line_items(frm);
-
-        // Function to check if the user has a specific role
-        function has_role(role) {
-            return frappe.user_roles.includes(role);
-        }
-
-        // Hide columns 'cost', 'total_cost', and 'total_cost_of_customer_line_item' if the user has 'sales_team_user' role
-        if (has_role('sales_team_user')) {
-            frm.fields_dict['mapper_automation_table'].grid.toggle_display('cost', false);
-            frm.fields_dict['mapper_automation_table'].grid.toggle_display('total_cost', false);
-            frm.fields_dict['mapper_automation_table'].grid.toggle_display('total_cost_of_customer_line_item', false);
-        }
     }
 });
 

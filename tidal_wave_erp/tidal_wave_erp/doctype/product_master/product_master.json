@@ -102,6 +102,7 @@
    "fieldtype": "Section Break"
   },
   {
+   "depends_on": "eval:!frappe.user.has_role('Sales Team User')",
    "fieldname": "cost",
    "fieldtype": "Currency",
    "label": "Cost"
@@ -109,7 +110,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-12 11:48:58.907698",
+ "modified": "2024-06-17 12:04:10.208402",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
  "name": "Product Master",

@@ -19,64 +19,83 @@
  ],
  "fields": [
   {
+   "columns": 1,
    "fieldname": "customer_line_item",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Customer Line Item"
   },
   {
+   "columns": 1,
    "fieldname": "product_id",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Product ID",
    "options": "Product Master"
   },
   {
+   "columns": 1,
    "fieldname": "quantity",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Quantity"
   },
   {
+   "columns": 1,
    "fieldname": "customer_item_quantity",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Customer Item Quantity"
   },
   {
+   "columns": 1,
    "fetch_from": "product_id.price",
    "fieldname": "price",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Price"
   },
   {
+   "columns": 1,
    "fieldname": "total_price",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Total Price"
   },
   {
+   "columns": 1,
    "fieldname": "total_price_of_customer_line_item",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Total Price Of Customer Line Item"
   },
   {
-   "depends_on": "eval:!frappe.user.has_role('Sales Team User') ",
+   "columns": 1,
    "fetch_from": "product_id.cost",
    "fieldname": "cost",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Cost "
   },
   {
+   "columns": 1,
    "fieldname": "total_cost",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Total Cost"
   },
   {
+   "columns": 1,
    "fieldname": "total_cost_of_customer_line_item",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Total Cost Of Customer Line Item"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-06-12 17:37:30.669540",
+ "modified": "2024-06-17 11:43:29.957070",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
  "name": "Mapper Automation Table",
