@@ -14,7 +14,9 @@
   "column_break_aqvy",
   "status",
   "section_break_vnaq",
-  "mapper_automation_table"
+  "mapper_automation_table",
+  "section_break_jiqd",
+  "mapper_automation_table_for_sales_user"
  ],
  "fields": [
   {
@@ -26,6 +28,7 @@
    "label": "Customer Name"
   },
   {
+   "depends_on": "eval:!frappe.user.has_role('Sales Team User')",
    "fieldname": "section_break_vnaq",
    "fieldtype": "Section Break"
   },
@@ -51,11 +54,21 @@
   {
    "fieldname": "column_break_aqvy",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_jiqd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mapper_automation_table_for_sales_user",
+   "fieldtype": "Table",
+   "label": "Mapper Automation Table For Sales User",
+   "options": "Mapper Automation Table Without Cost"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-12 17:36:37.352092",
+ "modified": "2024-06-22 11:40:35.291156",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
  "name": "Mapper Automation",

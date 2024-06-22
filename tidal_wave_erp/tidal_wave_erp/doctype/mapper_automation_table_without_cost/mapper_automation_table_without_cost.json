@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-04-27 14:56:28.405932",
+ "creation": "2024-06-20 11:46:18.552343",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -12,26 +12,29 @@
   "quantity",
   "price",
   "total_price",
-  "total_price_of_customer_line_item",
-  "cost",
-  "total_cost",
-  "total_cost_of_customer_line_item"
+  "total_price_of_customer_line_item"
  ],
  "fields": [
   {
-   "columns": 1,
+   "columns": 2,
    "fieldname": "customer_line_item",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Customer Line Item"
   },
   {
+   "columns": 2,
+   "fieldname": "customer_item_quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Customer Item Quantity"
+  },
+  {
    "columns": 1,
    "fieldname": "product_id",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Product ID",
-   "options": "Product Master"
+   "label": "Product ID"
   },
   {
    "columns": 1,
@@ -42,14 +45,6 @@
   },
   {
    "columns": 1,
-   "fieldname": "customer_item_quantity",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Customer Item Quantity"
-  },
-  {
-   "columns": 1,
-   "fetch_from": "product_id.price",
    "fieldname": "price",
    "fieldtype": "Currency",
    "in_list_view": 1,
@@ -68,37 +63,15 @@
    "fieldtype": "Currency",
    "in_list_view": 1,
    "label": "Total Price Of Customer Line Item"
-  },
-  {
-   "columns": 1,
-   "fetch_from": "product_id.cost",
-   "fieldname": "cost",
-   "fieldtype": "Currency",
-   "in_list_view": 1,
-   "label": "Cost "
-  },
-  {
-   "columns": 1,
-   "fieldname": "total_cost",
-   "fieldtype": "Currency",
-   "in_list_view": 1,
-   "label": "Total Cost"
-  },
-  {
-   "columns": 1,
-   "fieldname": "total_cost_of_customer_line_item",
-   "fieldtype": "Currency",
-   "in_list_view": 1,
-   "label": "Total Cost Of Customer Line Item"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-06-20 11:38:55.946579",
+ "modified": "2024-06-22 11:46:38.763244",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
- "name": "Mapper Automation Table",
+ "name": "Mapper Automation Table Without Cost",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",
