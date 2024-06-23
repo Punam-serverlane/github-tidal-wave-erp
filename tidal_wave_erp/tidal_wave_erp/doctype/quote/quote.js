@@ -18,6 +18,7 @@ frappe.ui.form.on('Quote', {
                 callback: function(r) {
                     if (r.message) {
                         frm.clear_table('quote_table');
+                        frm.clear_table('quote_table_for_sales_user'); // Clear the new table as well
                         $.each(r.message, function(_i, item) {
                             let row = frm.add_child('quote_table');
                             row.customer_line_item = item.customer_line_item;
@@ -25,11 +26,21 @@ frappe.ui.form.on('Quote', {
                             row.total_price = item.total_price;
                             row.total_cost = item.total_cost;
                             // Add other fields as needed
+
+                            // Copy the same data to the new table
+                            let new_row = frm.add_child('quote_table_for_sales_user');
+                            new_row.customer_line_item = item.customer_line_item;
+                            new_row.customer_item_quantity = item.customer_item_quantity;
+                            new_row.total_price = item.total_price;
+                            new_row.total_cost = item.total_cost;
+                            // Add other fields as needed
                         });
                         frm.refresh_field('quote_table');
+                        frm.refresh_field('quote_table_for_sales_user'); // Refresh the new table
                     }
                 }
             });
         }
     }
 });
+

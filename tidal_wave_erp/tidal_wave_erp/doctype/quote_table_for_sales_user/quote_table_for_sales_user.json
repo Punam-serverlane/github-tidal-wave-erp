@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-23 10:14:55.446607",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_line_item",
+  "customer_item_quantity",
+  "total_price"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "customer_line_item",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Line Item"
+  },
+  {
+   "columns": 2,
+   "fieldname": "customer_item_quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Customer Item Quantity"
+  },
+  {
+   "columns": 2,
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Price"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-23 10:21:26.027529",
+ "modified_by": "Administrator",
+ "module": "Tidal Wave ERP",
+ "name": "Quote Table For Sales User",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

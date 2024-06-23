@@ -30,12 +30,22 @@ def update_quotes_from_mapper_automation(doc, method):
     for quote in quotes:
         quote_doc = frappe.get_doc("Quote", quote.name)
         
-        # Clear existing rows in the quote_table
+        # Clear existing rows in the quote_table and quote_table_for_sales_user
         quote_doc.set("quote_table", [])
+        quote_doc.set("quote_table_for_sales_user", [])
         
         # Add new rows from the updated mapper_automation_doc
         for line_item in doc.mapper_automation_table:
             quote_doc.append("quote_table", {
+                'customer_line_item': line_item.customer_line_item,
+                'customer_item_quantity': line_item.customer_item_quantity,
+                'total_price': line_item.total_price_of_customer_line_item,
+                'total_cost': line_item.total_cost_of_customer_line_item
+                # Add other fields as needed
+            })
+            
+            # Copy the same data to the new table
+            quote_doc.append("quote_table_for_sales_user", {
                 'customer_line_item': line_item.customer_line_item,
                 'customer_item_quantity': line_item.customer_item_quantity,
                 'total_price': line_item.total_price_of_customer_line_item,

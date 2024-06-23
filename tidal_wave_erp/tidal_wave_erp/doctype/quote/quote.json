@@ -14,7 +14,9 @@
   "column_break_sl2k",
   "date",
   "section_break_mxfi",
-  "quote_table"
+  "quote_table",
+  "section_break_wzgj",
+  "quote_table_for_sales_user"
  ],
  "fields": [
   {
@@ -34,6 +36,7 @@
    "label": "Date"
   },
   {
+   "depends_on": "eval:!frappe.user.has_role('Sales Team User')",
    "fieldname": "section_break_mxfi",
    "fieldtype": "Section Break"
   },
@@ -48,11 +51,21 @@
    "fieldtype": "Link",
    "label": "Select Mapper Automation",
    "options": "Mapper Automation"
+  },
+  {
+   "fieldname": "section_break_wzgj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "quote_table_for_sales_user",
+   "fieldtype": "Table",
+   "label": "Quote Table For Sales User",
+   "options": "Quote Table For Sales User"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-23 14:33:20.969425",
+ "modified": "2024-06-23 10:24:25.494648",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
  "name": "Quote",
