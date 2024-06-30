@@ -11,20 +11,24 @@
  ],
  "fields": [
   {
+   "columns": 4,
    "fieldname": "customer_line_item",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Customer Line Item"
   },
   {
+   "columns": 4,
    "fieldname": "customer_item_quantity",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Customer Item Quantity"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-05-12 12:58:23.195802",
+ "modified": "2024-06-27 15:23:50.414222",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
  "name": "Customer Line Items",

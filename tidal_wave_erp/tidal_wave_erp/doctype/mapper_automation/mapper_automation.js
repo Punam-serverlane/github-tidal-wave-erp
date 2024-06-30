@@ -91,18 +91,20 @@ function copy_data_to_sales_user_table(frm) {
 
     // Copy data from mapper_automation_table to mapper_automation_table_for_sales_user
     frm.doc.mapper_automation_table.forEach(row => {
-        let new_row = frm.add_child('mapper_automation_table_for_sales_user');
-        new_row.customer_line_item = row.customer_line_item;
-        new_row.customer_item_quantity = row.customer_item_quantity;
-        new_row.product_id = row.product_id;
-        new_row.quantity = row.quantity;
-        new_row.price = row.price;
-       // new_row.cost = row.cost;
-        new_row.total_price = row.total_price;
-       // new_row.total_cost = row.total_cost;
-        new_row.total_price_of_customer_line_item = row.total_price_of_customer_line_item;
-       // new_row.total_cost_of_customer_line_item = row.total_cost_of_customer_line_item;
-        // Add more fields as required
+        if (row.customer_item_quantity > 0) {
+            let new_row = frm.add_child('mapper_automation_table_for_sales_user');
+            new_row.customer_line_item = row.customer_line_item;
+            new_row.customer_item_quantity = row.customer_item_quantity;
+            new_row.product_id = row.product_id;
+            new_row.quantity = row.quantity;
+            new_row.price = row.price;
+            // new_row.cost = row.cost;
+            new_row.total_price = row.total_price;
+            // new_row.total_cost = row.total_cost;
+            new_row.total_price_of_customer_line_item = row.total_price_of_customer_line_item;
+            // new_row.total_cost_of_customer_line_item = row.total_cost_of_customer_line_item;
+            // Add more fields as required
+        }
     });
 
     frm.refresh_field('mapper_automation_table_for_sales_user');
