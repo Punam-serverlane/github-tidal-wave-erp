@@ -61,12 +61,13 @@
    "fieldname": "quote_table_for_sales_user",
    "fieldtype": "Table",
    "label": "Quote Table For Sales User",
-   "options": "Quote Table For Sales User"
+   "options": "Quote Table For Sales User",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-27 17:49:21.303700",
+ "modified": "2024-07-01 15:17:23.231053",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
  "name": "Quote",

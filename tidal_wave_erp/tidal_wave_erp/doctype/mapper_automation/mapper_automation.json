@@ -64,12 +64,13 @@
    "fieldname": "mapper_automation_table_for_sales_user",
    "fieldtype": "Table",
    "label": "Mapper Automation Table For Sales User",
-   "options": "Mapper Automation Table Without Cost"
+   "options": "Mapper Automation Table Without Cost",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-27 17:46:47.999228",
+ "modified": "2024-07-01 15:15:59.380579",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
  "name": "Mapper Automation",
