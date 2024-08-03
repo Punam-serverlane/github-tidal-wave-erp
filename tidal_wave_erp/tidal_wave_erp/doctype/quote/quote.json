@@ -2,13 +2,14 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "format:Quote-{customer_name}-{#####}",
+ "autoname": "naming_series:naming_series",
  "creation": "2024-04-27 15:12:34.956537",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "select_mapper_automation",
   "customer_name",
   "column_break_sl2k",
@@ -63,15 +64,20 @@
    "label": "Quote Table For Sales User",
    "options": "Quote Table For Sales User",
    "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Select Series"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-01 15:17:23.231053",
+ "modified": "2024-08-03 17:32:46.090970",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
  "name": "Quote",
- "naming_rule": "Expression",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

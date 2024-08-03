@@ -2,13 +2,14 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "format:MA-{customer_name}-{#####}",
+ "autoname": "naming_series:naming_series",
  "creation": "2024-04-27 14:51:42.068340",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "select_customer_ask",
   "customer_name",
   "column_break_aqvy",
@@ -66,15 +67,20 @@
    "label": "Mapper Automation Table For Sales User",
    "options": "Mapper Automation Table Without Cost",
    "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Select Series"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-01 15:15:59.380579",
+ "modified": "2024-08-03 17:30:59.748052",
  "modified_by": "Administrator",
  "module": "Tidal Wave ERP",
  "name": "Mapper Automation",
- "naming_rule": "Expression",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
